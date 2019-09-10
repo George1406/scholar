@@ -25,12 +25,15 @@ public class Scholar {
         empleado1.Correo_Electronico="Georgeortizf06@gmail.com ";
        // System.out.println("El empleado se llama: " + empleado1.Nombre + empleado1.Apellido);
        empleado1.printName(); 
-       System.out.println("Fecha en que nació: " + empleado1.Fecha_Nacimiento);
-        System.out.println("Género: " + empleado1.Género);
-        System.out.println("Tipo de sangre: " + empleado1.Tipo_Sangre);
-        System.out.println("Nacionalidad: " + empleado1.Nacionalidad);
-        System.out.println("Identificación: " + empleado1.Identificación);
-        
+        //System.out.println("Fecha en que nació: " + empleado1.Fecha_Nacimiento);
+       empleado1.printFecha_Nacimiento();
+       empleado1.printTipo_Sangre();
+       empleado1.printIdentificación();
+       empleado1.printGénero();
+       empleado1.printNacionalidad();
+       empleado1.printDirección();
+       empleado1.printTelefono();
+       empleado1.printCorreo();
     }
 
 }

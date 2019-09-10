@@ -5,11 +5,16 @@
  */
 package scholar;
 
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
+
 /**
  *
  * @author estudiante
  */
 public class Persona {
+
     String Nombre;
     String Apellido;
     String Fecha_Nacimiento;
@@ -20,6 +25,7 @@ public class Persona {
     String dirección;
     String Correo_Electronico;
     String Género;
+    String Edad;
 
     public String getNombre() {
         return Nombre;
@@ -81,6 +87,10 @@ public class Persona {
         this.Género = Género;
     }
 
+    public void setEdad(String Edad) {
+        this.Edad = Edad;
+    }
+
     public String getIdentificación() {
         return Identificación;
     }
@@ -100,13 +110,49 @@ public class Persona {
     public String getGénero() {
         return Género;
     }
-    public void printName (){
-        System.out.println(this.Nombre + " " + this.Apellido);
+
+    public String getEdad() {
+        return Edad;
+    }
+
+    public void printName() {
+        System.out.println("Su nombre es: " + this.Nombre + " " + this.Apellido);
+
+    }
+
+    public void printFecha_Nacimiento() {
+        System.out.println("Fecha en que nació: " + this.Fecha_Nacimiento);
+    }
+
+    public void printTipo_Sangre() {
+        System.out.println("El tipo de sangre es: " + this.Tipo_Sangre);
+    }
+
+    public void printNacionalidad() {
+        System.out.println("Su nacionalidad es: " + this.Nacionalidad);
+    }
+
+    public void printIdentificación() {
+        System.out.println("Su identificación es " + this.Identificación);
+    }
+
+    public void printTelefono() {
+        System.out.println("El telefono es: " + this.Telefono);
+    }
+
+    public void printDirección() {
+        System.out.println("La dirección es: " + this.dirección);
+    }
+
+    public void printCorreo() {
+        System.out.println("El correo electronico es: " + this.Correo_Electronico);
+    }
+
+    public void printGénero() {
+        System.out.println("El Género es: " + this.Género);
+    }
+
+    public void printEdad() {
         
     }
-    
 }
-
-
-
-
