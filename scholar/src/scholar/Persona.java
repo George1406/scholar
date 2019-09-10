@@ -153,6 +153,6 @@ public class Persona {
     }
 
     public void printEdad() {
-        
+        System.out.println("La edad es: " + this.Edad);
     }
 }
