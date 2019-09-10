@@ -26,6 +26,8 @@ public class Persona {
     String Correo_Electronico;
     String Género;
     String Edad;
+    public int AñoNacimiento = 2002;
+    public int AñoActual = 2019;
 
     public String getNombre() {
         return Nombre;
@@ -87,10 +89,6 @@ public class Persona {
         this.Género = Género;
     }
 
-    public void setEdad(String Edad) {
-        this.Edad = Edad;
-    }
-
     public String getIdentificación() {
         return Identificación;
     }
@@ -109,10 +107,6 @@ public class Persona {
 
     public String getGénero() {
         return Género;
-    }
-
-    public String getEdad() {
-        return Edad;
     }
 
     public void printName() {
@@ -151,8 +145,11 @@ public class Persona {
     public void printGénero() {
         System.out.println("El Género es: " + this.Género);
     }
-
-    public void printEdad() {
-        System.out.println("La edad es: " + this.Edad);
+    public void printEdad(){
+        System.out.println("La edad es: " + this.calcuEdad() );
+    }
+    
+    public int calcuEdad(){
+        return AñoActual-AñoNacimiento;
     }
 }

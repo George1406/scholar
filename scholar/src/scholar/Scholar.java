@@ -23,11 +23,11 @@ public class Scholar {
         empleado1.Profesión="Estudiante ";
         empleado1.dirección="Calle 46 #11A 24 ";
         empleado1.Correo_Electronico="Georgeortizf06@gmail.com ";
-        empleado1.Edad="17";
        // System.out.println("El empleado se llama: " + empleado1.Nombre + empleado1.Apellido);
        empleado1.printName(); 
         //System.out.println("Fecha en que nació: " + empleado1.Fecha_Nacimiento);
        empleado1.printFecha_Nacimiento();
+       empleado1.printEdad();
        empleado1.printTipo_Sangre();
        empleado1.printIdentificación();
        empleado1.printGénero();
@@ -35,7 +35,6 @@ public class Scholar {
        empleado1.printDirección();
        empleado1.printTelefono();
        empleado1.printCorreo();
-       empleado1.printEdad();
     }
 
 }
