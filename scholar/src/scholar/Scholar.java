@@ -35,6 +35,11 @@ public class Scholar {
        empleado1.printDirección();
        empleado1.printTelefono();
        empleado1.printCorreo();
+    Formulario v1 = new Formulario();
+    v1.setVisible(true);
+    
+    Ventana v2 = new Ventana();
+    v2.setVisible(true);
     }
 
 }

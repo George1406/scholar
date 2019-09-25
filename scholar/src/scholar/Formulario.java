@@ -26,15 +26,39 @@ public class Formulario extends JFrame {
         cp.setLayout(new FlowLayout());
         
         JLabel etiqueta = new JLabel ("NOMBRE");
-        JTextField text = new JTextField(20);
-        JButton boton = new JButton ("ESCRIBIR");
+        JTextField texto = new JTextField(20);
         cp.add(etiqueta);
-        cp.add(text);
-        cp.add(boton);
+        cp.add(texto);
         
-        Container dc = getContentPane();
-        dc.setLayout(new FlowLayout());
+        JLabel etiqueta2 = new JLabel ("APELLIDO");
+        JTextField text2 = new JTextField(20);
+        cp.add(etiqueta2);
+        cp.add(text2);
         
+        JLabel etiqueta3 = new JLabel ("DIRECCION");
+        JTextField text3 = new JTextField(20);
+        cp.add (etiqueta3);
+        cp.add(text3);
         
+        JLabel etiqueta4 = new JLabel ("TIPO DE SANGRE");
+        JTextField text4 = new JTextField(20);
+        cp.add (etiqueta4);
+        cp.add(text4);
+        
+        JLabel etiqueta5 = new JLabel ("IDENTIFICACION");
+        JTextField text5 = new JTextField(20);
+        cp.add (etiqueta5);
+        cp.add(text5);
+        
+        JLabel etiqueta6 = new JLabel ("TELEFONO");
+        JTextField text6 = new JTextField(20);
+        cp.add (etiqueta6);
+        cp.add(text6);
+        
+        JLabel etiqueta7 = new JLabel ("EMAIL");
+        JTextField text7 = new JTextField(20);
+        cp.add (etiqueta7);
+        cp.add(text7);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 }
